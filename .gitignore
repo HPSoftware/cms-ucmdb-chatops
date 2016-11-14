@@ -1,0 +1,6 @@
+node_modules
+.DS_Store*
+.hubot_history
+.idea
+db_slackbutton_bot
+data

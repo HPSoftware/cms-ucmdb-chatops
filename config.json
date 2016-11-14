@@ -1,0 +1,16 @@
+{
+  "config":{
+    "ucmdb":{
+      "servers":{
+        "default":"server_one",
+        "server_one":{
+          "protocol":"<http/https>",
+          "endpoint":"<ucmdb_server_url>",
+          "port":"<port_number>",
+          "account":"<username>",
+          "password":"<encrypted_password>"
+        }
+      }
+    }
+  }
+}
