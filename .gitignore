@@ -4,3 +4,5 @@ node_modules
 .idea
 db_slackbutton_bot
 data
+start.bat
+start.sh
