@@ -1,9 +1,9 @@
-set CLIENT_ID=95277992615.95280194577
-set CLIENT_SECRET=4d7a3b65de0eb29a6d835206da52b770
-set BOT_NAME=ucmdbot
+set CLIENT_ID=<client_id>
+set CLIENT_SECRET=<client_secret>
+set BOT_NAME=<bot_name>
 
-set HTTP_PROXY=http://web-proxy.eu.hpecorp.net:8080
-set HTTPS_PROXY=http://web-proxy.eu.hpecorp.net:8080
+rem set HTTP_PROXY=<http_proxy>
+rem set HTTPS_PROXY=<https_proxy>
 
 
 
