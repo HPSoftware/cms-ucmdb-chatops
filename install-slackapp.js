@@ -6,8 +6,8 @@ var fs = require('fs');
 exports.createStartFiles = function (apiToken, botToken, httpProxy, httpsProxy) {
   //windows
   var batFileContent = [];
-  var windowsHttpProxy = httpProxy != null && httpProxy != '' ? 'set HTTP_PROXY=' + httpProxy : 'rem set HTTP_PROXY=<http_proxy>';
-  var windowsHttpsProxy = httpsProxy != null && httpsProxy != '' ? 'set HTTPS_PROXY=' + httpsProxy : 'rem set HTTPS_PROXY=<https_proxy>';
+  var windowsHttpProxy = httpProxy != null && httpProxy != '' ? 'set HTTP_PROXY=' + httpProxy : '';
+  var windowsHttpsProxy = httpsProxy != null && httpsProxy != '' ? 'set HTTPS_PROXY=' + httpsProxy : '';
   batFileContent.push(
     'set CONFIG_FILE=./config.json' + '\n',
     'set SLACK_APP_TOKEN=' + apiToken + '\n',
@@ -24,8 +24,8 @@ exports.createStartFiles = function (apiToken, botToken, httpProxy, httpsProxy) 
 
   //linux
   var shFileContent = [];
-  var linuxHttpProxy = httpProxy != null && httpProxy != '' ? 'export http_proxy=' + httpProxy : '# export http_proxy=<http_proxy>';
-  var linuxHttpsProxy = httpsProxy != null && httpsProxy != '' ? 'export https_proxy=' + httpsProxy : '# export https_proxy=<https_proxy>';
+  var linuxHttpProxy = httpProxy != null && httpProxy != '' ? 'export http_proxy=' + httpProxy : '';
+  var linuxHttpsProxy = httpsProxy != null && httpsProxy != '' ? 'export https_proxy=' + httpsProxy : '';
   shFileContent.push(
     'export CONFIG_FILE=./config.json' + '\n',
     'export SLACK_APP_TOKEN=' + apiToken + '\n',

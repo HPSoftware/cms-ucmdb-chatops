@@ -8,7 +8,7 @@
     "botkit": "^0.4.1",
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
-    "hubot-enterprise": "github:eedevops/hubot-enterprise",
+    "hubot-enterprise": "git+https://github.com/eedevops/hubot-enterprise.git",
     "hubot-help": "^0.2.0",
     "hubot-redis-brain": "0.0.3",
     "hubot-scripts": "^2.17.2",
