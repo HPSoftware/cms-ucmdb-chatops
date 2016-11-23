@@ -36,7 +36,7 @@ exports.createStartFiles = function (apiToken, botToken, httpProxy, httpsProxy) 
     linuxHttpProxy + '\n',
     linuxHttpsProxy + '\n',
     '\n',
-    'bin\\hubot --adapter slack' + '\n'
+    'sh bin/hubot --adapter slack' + '\n'
   );
   fs.writeFileSync('start.sh', shFileContent.join(''));
 
